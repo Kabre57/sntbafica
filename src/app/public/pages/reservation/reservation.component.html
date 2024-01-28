@@ -1,0 +1,88 @@
+<!--/inner-page-->
+<div class="inner-banner py-5">
+    <section class="w3l-breadcrumb text-left py-sm-5 ">
+        <div class="container">
+            <div class="w3breadcrumb-gids">
+                <div class="w3breadcrumb-left text-left">
+                    <h2 class="inner-w3-title mt-sm-5 mt-4">
+                        reservation </h2>
+
+                </div>
+                <div class="w3breadcrumb-right">
+                    <ul class="breadcrumbs-custom-path">
+                        <li><a href=" ">Home</a></li>
+                        <li class="active"><span class="fas fa-angle-double-right mx-2"></span> reservation </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+<!--//inner-page-->
+<div class="card-body blog-details">
+
+    <form action="#" method="POST">
+        <h2>Informations du bien réservé</h2>
+        
+        <label for="emplacement">Emplacement souhaité :</label>
+        <select id="emplacement" name="emplacement" required>
+          <option value="">Sélectionnez l'emplacement</option>
+          <option value="emplacement1">Emplacement 1</option>
+          <option value="emplacement2">Emplacement 2</option>
+          <option value="emplacement3">Emplacement 3</option>
+          <!-- Ajoutez d'autres options d'emplacement si nécessaire -->
+        </select>
+        
+        <label for="type-bien">Type du Bien :</label>
+        <select id="type-bien" name="type-bien" required>
+          <option value="">Sélectionnez le type de bien</option>
+          <option value="villa-basse">Villa basse</option>
+          <option value="villa-duplex">Villa duplex</option>
+        </select>
+        
+        <label for="standing">Standing :</label>
+        <select id="standing" name="standing" required>
+          <option value="">Sélectionnez le standing</option>
+          <option value="moyen-stand">Moyen standing</option>
+          <option value="economique">Economique</option>
+          <option value="social">Social</option>
+        </select>
+        
+        <label for="prix">Prix de vente :</label>
+        <input type="text" id="prix" name="prix" required>
+        
+        <label for="superficie">Superficie :</label>
+        <input type="text" id="superficie" name="superficie" required>
+        
+        <label for="etat-avancement">Etat d'avancement :</label>
+        <input type="text" id="etat-avancement" name="etat-avancement" value="En Cours de Commercialisation" readonly>
+        
+        <label for="avance">Avance pour Option réservation :</label>
+        <input type="text" id="avance" name="avance" value="30% du coût de la maison" readonly>
+        
+        <h2>Informations de l'acquéreur</h2>
+        
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        
+        <label for="prenoms">Prénoms :</label>
+        <input type="text" id="prenoms" name="prenoms" required>
+        
+        <label for="cni">N°CNI/passeport :</label>
+        <input type="text" id="cni" name="cni" required>
+        
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+        
+        <label for="whatsapp">WhatsApp :</label>
+        <input type="tel" id="whatsapp" name="whatsapp" required>
+        
+        <label for="adresse">Adresse :</label>
+        <input type="text" id="adresse" name="adresse" required>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Soumettre</button>
+      </form>
