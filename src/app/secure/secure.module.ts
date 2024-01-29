@@ -10,8 +10,9 @@ import { CreateArticleComponent } from './pages/articles/create-article/create-a
 import { EditArticleComponent } from './pages/articles/edit-article/edit-article.component';
 import { CategoriesComponent } from './pages/categories/categories.component';
 import { UsersComponent } from './pages/users/users.component';
-import { CreateUserComponent } from './pages/users/create-user/create-user.component';
-import { EditUserComponent } from './pages/users/edit-user/edit-user.component';
+import { RecoverPasswordComponent } from './pages/users/recover-password/recover-password.component';
+import { SignInComponent } from './pages/users/sign-in/sign-in.component';
+import { SignUpComponent } from './pages/users/sign-up/sign-up.component';
 
 
 @NgModule({
@@ -24,8 +25,9 @@ import { EditUserComponent } from './pages/users/edit-user/edit-user.component';
     EditArticleComponent,
     CategoriesComponent,
     UsersComponent,
-    CreateUserComponent,
-    EditUserComponent
+    RecoverPasswordComponent,
+    SignInComponent,
+    SignUpComponent
   ],
   imports: [
     CommonModule,

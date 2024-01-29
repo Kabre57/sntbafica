@@ -13,6 +13,9 @@ import { SntbplusComponent } from './pages/sntbplus/sntbplus.component';
 import { TeamsComponent } from './pages/teams/teams.component';
 import { ReservationComponent } from './pages/reservation/reservation.component';
 import { PropertiesComponent } from './pages/properties/properties.component';
+import { FormaffaireComponent } from './pages/reservation/formaffaire/formaffaire.component';
+import { FormfournisseurComponent } from './pages/reservation/formfournisseur/formfournisseur.component';
+import { FormprestataireComponent } from './pages/reservation/formprestataire/formprestataire.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { PropertiesComponent } from './pages/properties/properties.component';
     SntbplusComponent,
     TeamsComponent,
     ReservationComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    FormaffaireComponent,
+    FormfournisseurComponent,
+    FormprestataireComponent
   ],
   imports: [
     CommonModule,

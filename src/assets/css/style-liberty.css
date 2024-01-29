@@ -31,7 +31,11 @@
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
-
+.call-us-text {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 16px;
+  }
 *,
 ::after,
 ::before {
@@ -18822,6 +18826,10 @@ a.dropdown-item.active {
 .w3l-main-slider .banner-slider {
     position: relative;
     z-index: 1;
+    -webkit-backface-visibility: hidden; /* Préfixe pour Chrome, Safari, Opera */
+    -moz-backface-visibility: hidden; /* Préfixe pour Firefox */
+    -ms-backface-visibility: hidden; /* Préfixe pour Internet Explorer */
+    backface-visibility: hidden; /* Propriété standard */
 }
 
 .w3l-main-slider .slider-info a img {
@@ -19068,6 +19076,7 @@ p.w3ban-para {
     position: relative;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
+    
 }
 
 .owl-carousel .owl-stage:after {

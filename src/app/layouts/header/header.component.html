@@ -3,8 +3,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
             <h1>
-                <a id="home" href="/" class="navbar-brand">
-                    SNTB<span class="sub-color">.AFRICA</span>
+                <a id="home" class="logo" routerLink="/"><img alt="" src="assets/images/logo.jpg" height="50" width="50">
+              
                     <i class="sub-color"></i>
                 </a></h1>
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" #toggleButton>
@@ -13,23 +13,29 @@
                   </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav mx-lg-auto my-2 my-lg-0 navbar-nav-scroll">
-                    
                     <li class="nav-item">
-                        <a routerLink="services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos Services" (click)="closeMenu()">Nos services</a>
+                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Accueil" (click)="closeMenu()"> Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a routerLink="services" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos Services" (click)="closeMenu()"> Services</a>
                     </li>
                     <li class="nav-item">
-                        <a routerLink="produits" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos produits" (click)="closeMenu()">Nos produits</a>
+                        <a routerLink="produits" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos produits" (click)="closeMenu()"> Produits</a>
                     </li>
                     <li class="nav-item">
-                        <a routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos réalisations" (click)="closeMenu()">Nos réalisations</a>
+                        <a routerLink="portfolio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos réalisations" (click)="closeMenu()"> Réalisations</a>
                     </li>
                     <li class="nav-item">
-                        <a routerLink="news" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos actualités" (click)="closeMenu()">Nos actualités</a>
+                        <a routerLink="news" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="Nos actualités" (click)="closeMenu()"> Actualités</a>
                     </li>
                     <li class="nav-item">
                         <a routerLink="reservation" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="reservation" (click)="closeMenu()">Reservation</a>
                     </li>
-            </ul>
+                    <li class="nav-item">
+                        <a routerLink="sntbplus" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link" title="sntbplus" (click)="closeMenu()">sntbplus</a>
+                    </li>
+                    </ul>
                 <!--/search-->
                 <button id="trigger-overlay" class="searchw3-icon me-xl-4 me-lg-3" type="button"><i class="fas fa-search"></i></button>
                 <!-- open/close -->
@@ -42,6 +48,7 @@
                             <button class="btn btn-style btn-primary" type="submit">Recherche</button>
                         </form>
                     </nav>
+                    <span class="call-us-text">Appelez-nous au 07070707</span>
                 </div>
                 <!--//search-->
             </div>
